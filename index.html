@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formularz ECHO CLS</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+  <div class="max-w-4xl mx-auto p-6 bg-white shadow-md mt-10 rounded-lg">
+    <header class="flex items-center mb-6">
+      <img src="../logo_szpitala.png" alt="Logo kliniki" class="h-16 mr-4">
+      <div>
+        <h1 class="text-xl font-bold">Klinika Kardiologii z Pododdziałem Ostrych Zespołów Wieńcowych</h1>
+        <p>Kliniczny Szpital Wojewódzki Nr 2 im. Św. Jadwigi Królowej w Rzeszowie</p>
+        <p>ul. Lwowska 60, 35-301 Rzeszów</p>
+      </div>
+    </header>
+    <h2 class="text-lg font-semibold mb-4">Formularz badania echokardiograficznego</h2>
+    <form action="/export" method="post" class="space-y-6">
+      <!-- Full form sections 1-9 as previously defined -->
+      <!-- ... -->
+      <div class="flex space-x-4 mt-6">
+        <button type="submit" name="format" value="csv" class="px-4 py-2 bg-blue-600 text-white rounded">Eksportuj CSV</button>
+        <button type="submit" name="format" value="docx" class="px-4 py-2 bg-green-600 text-white rounded">Eksportuj DOCX</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
